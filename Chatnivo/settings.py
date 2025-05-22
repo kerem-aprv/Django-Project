@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-aeitje6rp@r&u%j_(kw^(graphk-9bbu)2y%-wamh-oe&8jx3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-project-8t6d.onrender.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -82,6 +82,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'Chatnivo.wsgi.application'
 #Chatnivo.wsgi

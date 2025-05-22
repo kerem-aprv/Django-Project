@@ -7,6 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/5.0/howto/deployment/asgi/
 """
 
+
 import os
 import django
 from channels.routing import get_default_application
@@ -16,3 +17,5 @@ django.setup()
 #asgi ile communication halinde eszamanli gateway
 application = get_default_application()
 application = routing.application
+
+

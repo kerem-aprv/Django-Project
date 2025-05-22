@@ -31,7 +31,7 @@ urlpatterns = [
     path('check-login/', check_login, name='check_login'),
     path('user-profile/', UserProfileView.as_view(), name='user-profile'),
     path('get-available-users/', get_available_users, name='get_available_users'),
-   # path('ws/notifications/', consumers.NotificationConsumer.as_asgi(), name='ws_notifications'),
+    path('ws/notifications/', consumers.NotificationConsumer.as_asgi(), name='ws_notifications'),
     path('notifications/', NotificationView.as_view()),
 
     # Profiles URLs
