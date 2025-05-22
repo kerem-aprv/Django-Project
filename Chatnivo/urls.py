@@ -19,10 +19,13 @@ from django.urls import path
 from django.conf.urls.static import static
 from chat import consumers
 from userprofile.views import *
+#
 from chat.views import *
 
 
 urlpatterns = [
+#
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('register/', UserRegisterView.as_view(), name='register'),
     path('login/', UserLoginView.as_view(), name='login'),

@@ -12,6 +12,10 @@ from .models import Chatroom, Message, Notification
 import json
 
 from .serializers import NotificationSerializer
+from django.http import HttpResponse
+#
+def home_view(request):
+    return HttpResponse("Welcome to ChatNivo Home Page! ")
 
 
 @ensure_csrf_cookie
