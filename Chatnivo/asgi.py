@@ -13,6 +13,6 @@ from channels.routing import get_default_application
 from . import routing 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat.settings')
 django.setup()
-#asgi ile communication halinde
+#asgi ile communication halinde eszamanli gateway
 application = get_default_application()
 application = routing.application
