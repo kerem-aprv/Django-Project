@@ -30,10 +30,7 @@ SECRET_KEY = 'django-insecure-aeitje6rp@r&u%j_(kw^(graphk-9bbu)2y%-wamh-oe&8jx3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 
-                 '127.0.0.1',
-    'localhost',
-    os.environ.get('RENDER_EXTERNAL_HOSTNAME', 'django-project-8t6d.onrender.com'),'django-project-8t6d.onrender.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -59,7 +56,6 @@ CHANNEL_LAYERS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -67,7 +63,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-   
 ]
 
 ROOT_URLCONF = 'Chatnivo.urls'
@@ -138,12 +133,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')  # Local static dosyaları için (opsiyonel)
-]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -154,7 +143,6 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://django-project-rouge.vercel.app'
 ]   
 
 CORS_ALLOWED_ORIGINS = [
@@ -162,6 +150,6 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:3000',
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://django-project-rouge.vercel.app',
+   
 ]
 CORS_ALLOW_CREDENTIALS = True
