@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../utils/Navbar';
 import foggyBlueForest from '../static/foggy_blue_forest.jpg';
-import whispering from '../static/whispering.jpg';
 import peace from '../static/peace.png';
 
 const Dashboard = () => {
